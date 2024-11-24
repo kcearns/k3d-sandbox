@@ -11,7 +11,16 @@
     "customizations": {
         "vscode": {
             "extensions": [
-                "skellock.just"
+                "skellock.just",
+                "GitHub.copilot",
+                "GitHub.copilot-chat",
+                "ms-kubernetes-tools.vscode-kubernetes-tools",
+                "redhat.vscode-yaml",
+                "ms-azuretools.vscode-docker",
+                "Tim-Koehler.helm-intellisense",
+                "ipedrazas.kubernetes-snippets",
+                "mindaro.mindaro",
+                "redhat.vscode-xml"
             ]
         }
     }

@@ -15,6 +15,10 @@ deploy:
     kubectl create deployment nginx --image=nginx
     kubectl expose deployment nginx --port=80 --type=LoadBalancer
 
+# Sample Helm chart
+helm:
+    helm install mychart ./helm/mychart
+
 # Install netshoot
 netshoot:
     kubectl run tmp-shell --rm -i --tty --image nicolaka/netshoot
@@ -30,3 +34,4 @@ info:
 clean:
     kubectl delete deployment nginx
     kubectl delete service nginx
+    helm uninstall mychart
