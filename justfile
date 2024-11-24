@@ -4,11 +4,11 @@ default:
 
 # Create k3d cluster
 cluster:
-    k3d cluster create mycluster --agents 2 --port '8080:80@loadbalancer'
+    k3d cluster create sandbox --agents 2 --port '8080:80@loadbalancer'
 
 # Delete cluster
 delete:
-    k3d cluster delete mycluster
+    k3d cluster delete sandbox
 
 # Deploy nginx
 deploy:
@@ -30,4 +30,3 @@ info:
 clean:
     kubectl delete deployment nginx
     kubectl delete service nginx
-    kubectl delete ingress nginx-ingress

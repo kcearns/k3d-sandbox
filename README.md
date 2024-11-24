@@ -1,4 +1,16 @@
-### Optional Cluster Tools
+### List recipes
+
+```bash
+just
+```
+
+### Create cluster example
+
+```bash
+just cluster
+```
+
+### Optional cluster tools
 
 ```bash
 # Install k9s for cluster management
